@@ -1,0 +1,22 @@
+<form [formGroup]="formPortero">
+  <div>
+    <input type="text" formControlName="nombreApellidos" id="nombreApellidos" class="formControl">
+    <label for="nombreApellidos">Nombre y Apellidos</label>
+  </div>
+  <div>
+    <input type="text" formControlName="ciudad" id="ciudad" class="formControl">
+    <label for="ciudad">Ciudad</label>
+  </div>
+  <div><input type="text" formControlName="telefono" id="telefono" class="formControl">
+    <label for="telefono">Telefono</label>
+  </div>
+  <div>
+    <input type="text" formControlName="email" id="email" class="formControl">
+    <label for="email">Email</label>
+  </div>
+  <div>
+    <input type="text" formControlName="mesDisponible" id="mesDisponible" class="formControl">
+    <label for="mesDisponible">Mes Disponible</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Añadir</button>
+</form>

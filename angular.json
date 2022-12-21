@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -94,8 +95,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "examen2-SanchezCardoso:build:production",
+            "firebaseProject": "ejercicio-csi2-2022-salva",
+            "firebaseHostingSite": "ejercicio-csi2-2022-salva"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "161a66b5-cfc9-4ee2-945f-14bbc72d8029"
   }
 }
